@@ -1,0 +1,28 @@
+describe('TEST GET METHOD PATH PARAMETER', () => {
+    const url = process.env.URL;
+
+    it("Test GET Method with VALID Path Parameter", () => {
+        chai.request(url)
+            .get("/books")
+            .then((response) => {
+                const bookID = response.body;
+                return bookID;
+            })
+            .then((bookID) => {
+                for (let i = 0; i < bookID.length; i ++) {
+                    chai.request(url)
+                        .get(`/books/${bookID[i].id}`)
+                        .end((error, response) => {
+                            if (error) throw error;
+                            chai.expect(response.status).to.eq(200);
+                            chai.expect(response.body[0]).to.have.property("id", bookID[i].id);
+                            chai.expect(response.body[0]).to.have.property("name", bookID[i].name);
+                        })               
+                }               
+            })
+            .catch((error) => {
+                return Promise.reject(error);
+            });
+    });
+
+});

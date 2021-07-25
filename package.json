@@ -1,0 +1,19 @@
+{
+  "name": "api-test-mocha-chai-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --timeout 30000 --reporter mochawesome"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
+    "dotenv": "^10.0.0",
+    "mocha": "^9.0.2",
+    "mochawesome": "^6.2.2"
+  }
+}
