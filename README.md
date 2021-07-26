@@ -40,7 +40,7 @@ You can download Postman [here](https://www.postman.com/downloads/)
 ## Preparation
 
 ### Clone Repo
-- Clone from this repo https://github.com/harisdaniels/api-testing-first-project.git (choose `main` branch).
+- Clone from this repo https://github.com/harisdaniels/api-testing-first-project.git.
 - The steps of cloning Github Repository, can be found [here](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository).
 
 ### Setup
