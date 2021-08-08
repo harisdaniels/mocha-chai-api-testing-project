@@ -1,4 +1,4 @@
-# This Is My Self-Project of API Testing
+# This Is My Self-Project of API Testing Using Mocha and Chai
 
 ## Project Information
 For this project, i use: 
@@ -54,9 +54,7 @@ Before start development and running the test you need to install packages that 
 - wait, and done
 
 ### Generating Access Token from Postman (API Authentication)
-To submit or view an `/order`, you need to register your API client.
-
-Generating access token SHOULD be conducted. Because, if we do not do this, we can only run GET method Test, not POST, PATCH, DELETE Test.
+To submit or view an `/orders`, you need to register your API client.
 
 The request body needs to be in JSON format and include the following properties:
 - `clientName` - String
