@@ -1,4 +1,4 @@
-# This Is My Self-Project of API Testing Using Mocha and Chai
+# This Is My Sample Project of API Testing Using Mocha and Chai
 
 ## Project Information
 For this project, i use: 
